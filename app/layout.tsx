@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Washington D.C. Space Industry Happy Hour | Station DC Residency',
+  title: 'Space Happy Hour DC',
   description: 'A recurring residency bringing together the DMV\'s space, defense, satellite, and deep tech ecosystem through curated networking, themed programming, and structured office hours.',
   generator: 'v0.app',
   icons: {
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-[#121212]">
+    <html lang="en" className="overflow-x-clip bg-[#121212]">
       <body
         className={`${orbitron.variable} ${spaceGrotesk.variable} font-sans antialiased`}
       >

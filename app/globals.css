@@ -98,6 +98,12 @@
   body {
     @apply m-0 min-h-screen bg-background text-foreground antialiased;
   }
+
+  /* In-page anchors: tight offset so the section label sits just below the sticky nav */
+  main section[id],
+  main footer[id] {
+    scroll-margin-top: 9rem;
+  }
 }
 
 /* Wide display type (Orbitron) — prospectus / space-agency feel */
