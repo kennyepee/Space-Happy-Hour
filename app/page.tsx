@@ -4,7 +4,6 @@ import { Starfield } from "@/components/space/starfield"
 import { Navbar } from "@/components/space/navbar"
 import { Hero } from "@/components/space/hero"
 import { AboutSection } from "@/components/space/about-section"
-import { ResidencySection } from "@/components/space/residency-section"
 import { EventsSection } from "@/components/space/events-section"
 import { WhyAttendSection } from "@/components/space/why-attend-section"
 import { EcosystemSection } from "@/components/space/ecosystem-section"
@@ -26,7 +25,6 @@ export default function SpaceHappyHourPage() {
         <Hero />
         <AboutSection />
         <EventsSection />
-        <ResidencySection />
         <WhyAttendSection />
         <EcosystemSection />
         <GetInvolvedSection />

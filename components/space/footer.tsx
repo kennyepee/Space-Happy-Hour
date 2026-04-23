@@ -4,7 +4,6 @@ import Link from "next/link"
 
 const footerLinks = [
   { href: "/#about", label: "About" },
-  { href: "/#residency", label: "Residency" },
   { href: "/#events", label: "Events" },
   { href: "/#get-involved", label: "Get involved" },
   { href: "/#contact", label: "Contact" },
@@ -12,9 +11,12 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="relative py-16 border-t border-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+    <footer
+      id="contact"
+      className="relative w-full border-t border-white/10 bg-[#121212] py-16 shadow-[0_-1px_0_rgba(255,255,255,0.06)]"
+    >
+      <div className="mx-auto w-full max-w-7xl divide-y divide-white/[0.06] px-5 sm:px-8 lg:px-12">
+        <div className="grid items-start gap-12 pb-10 md:grid-cols-2">
           {/* Brand */}
           <div>
             <div className="mb-4">
@@ -41,7 +43,7 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-border">
+        <div className="pt-8">
           <p className="text-sm text-muted-foreground text-center">
             &copy; {new Date().getFullYear()} Space Happy Hour. All rights reserved.
           </p>

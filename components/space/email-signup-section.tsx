@@ -16,7 +16,7 @@ export function EmailSignupSection() {
   }
 
   return (
-    <section id="email-signup" className="relative py-24 lg:py-32">
+    <section id="email-signup" className="relative bg-secondary/30 py-24 lg:py-32">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
         {/* Headline */}
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">

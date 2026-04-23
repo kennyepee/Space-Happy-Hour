@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 const navLinks = [
   { href: "/#about", label: "About" },
   { href: "/#events", label: "Events" },
-  { href: "/#residency", label: "Residency" },
   { href: "/#why-attend", label: "Why attend" },
   { href: "/#get-involved", label: "Get involved" },
   { href: "/#contact", label: "Contact" },
@@ -16,9 +15,9 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#121212] shadow-[0_1px_0_rgba(255,255,255,0.06)]">
+    <header className="vh-compact-navbar sticky top-0 z-50 w-full border-b border-white/10 bg-[#121212] shadow-[0_1px_0_rgba(255,255,255,0.06)]">
       <div className="mx-auto w-full max-w-7xl divide-y divide-white/[0.06] px-5 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between gap-4 py-4">
+        <div className="vh-compact-navbar-top flex items-center justify-between gap-4 py-4">
           <Link
             href="/#home"
             className="font-display flex items-center gap-3 leading-tight text-foreground"
@@ -34,10 +33,10 @@ export function Navbar() {
               />
             </span>
             <span className="flex flex-col">
-              <span className="text-sm font-semibold tracking-[0.08em] sm:text-base">
+              <span className="vh-compact-navbar-brand text-sm font-semibold tracking-[0.08em] sm:text-base">
                 Space Happy Hour DC
               </span>
-              <span className="mt-0.5 text-[10px] font-medium tracking-[0.1em] text-muted-foreground sm:text-xs">
+              <span className="vh-compact-navbar-subbrand mt-0.5 text-[10px] font-medium tracking-[0.1em] text-muted-foreground sm:text-xs">
                 SHH-DC Residency
               </span>
             </span>
@@ -50,7 +49,7 @@ export function Navbar() {
             <Link href="/#email-signup">Register</Link>
           </Button>
         </div>
-        <nav className="py-3" aria-label="Section navigation">
+        <nav className="vh-compact-navbar-nav py-3" aria-label="Section navigation">
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-muted-foreground sm:text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>

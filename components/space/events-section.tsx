@@ -121,7 +121,7 @@ function EventCard({ event, isPast }: { event: EventItem; isPast: boolean }) {
   return (
     <div
       className={cn(
-        "glass flex h-full min-h-[320px] flex-col rounded-xl p-5 transition-all duration-300 hover:bg-secondary/50 sm:p-6",
+        "glass vh-compact-event-card flex h-full min-h-[280px] flex-col rounded-xl p-4 transition-all duration-300 hover:bg-secondary/50 sm:min-h-[300px] sm:p-5",
         isPast ? "opacity-95" : ""
       )}
     >
@@ -260,18 +260,21 @@ export function EventsSection() {
   }
 
   return (
-    <section id="events" className="relative bg-secondary/30 py-24 lg:py-32">
+    <section
+      id="events"
+      className="vh-compact-events-section relative scroll-mt-20 bg-secondary/30 py-16 lg:scroll-mt-24 lg:py-20"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">Events</p>
+        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Events</p>
 
-        <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+        <h2 className="vh-compact-events-title mb-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
           Upcoming &amp; previous events
         </h2>
-        <p className="mb-2 max-w-2xl text-muted-foreground">
+        <p className="mb-1 max-w-2xl text-muted-foreground">
           The center card is the focus; faded cards are the previous and next residency nights — like a queue in a
           player.
         </p>
-        <p className="mb-10 text-sm text-muted-foreground/80">
+        <p className="mb-6 text-sm text-muted-foreground/80">
           Use the arrows, swipe, or click a side card to change events.
         </p>
 
@@ -298,7 +301,7 @@ export function EventsSection() {
 
             <div
               tabIndex={0}
-              className="grid min-h-[min(420px,70vh)] w-full min-w-0 flex-1 grid-cols-1 items-stretch gap-3 outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-secondary/30 sm:grid-cols-[minmax(0,1fr)_minmax(0,22rem)_minmax(0,1fr)] sm:gap-4 md:gap-5"
+              className="vh-compact-events-carousel grid min-h-[min(360px,55vh)] w-full min-w-0 flex-1 grid-cols-1 items-stretch gap-3 outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-secondary/30 sm:grid-cols-[minmax(0,1fr)_minmax(0,22rem)_minmax(0,1fr)] sm:gap-4 md:gap-5"
               onTouchStart={onTouchStart}
               onTouchEnd={onTouchEnd}
               onWheel={onWheel}

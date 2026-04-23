@@ -177,3 +177,79 @@ main section h2 {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
+/* Compact viewport-height tuning (e.g. extended displays with shorter visible height). */
+@media (max-height: 820px) {
+  .vh-compact-navbar-top {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .vh-compact-navbar-nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .vh-compact-navbar-subbrand {
+    font-size: 0.625rem;
+  }
+
+  .vh-compact-navbar-brand {
+    font-size: 0.875rem;
+  }
+
+  .vh-compact-hero-media {
+    min-height: min(56vh, 440px);
+  }
+
+  .vh-compact-hero-overlay {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .vh-compact-hero-title {
+    font-size: clamp(1.1rem, 3.2vw, 2rem);
+  }
+
+  .vh-compact-hero-title span:nth-child(2) {
+    font-size: clamp(0.9rem, 2.2vw, 1.4rem);
+  }
+
+  .vh-compact-hero-logos {
+    padding-top: 1.5rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .vh-compact-hero-copy {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .vh-compact-hero-copy p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .vh-compact-hero-cta {
+    margin-top: 1.25rem;
+  }
+
+  .vh-compact-events-section {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .vh-compact-events-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .vh-compact-events-carousel {
+    min-height: min(320px, 48vh);
+  }
+
+  .vh-compact-event-card {
+    min-height: 245px;
+    padding: 0.875rem;
+  }
+}

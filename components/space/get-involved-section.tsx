@@ -10,7 +10,7 @@ export function GetInvolvedSection() {
   const mailtoHref = `mailto:${PARTICIPATION_EMAIL}?subject=${encodeURIComponent("Get involved — Space Happy Hour DC")}`
 
   return (
-    <section id="get-involved" className="relative border-y border-border/60 bg-secondary/25 py-24 lg:py-32">
+    <section id="get-involved" className="relative border-y border-border/60 bg-secondary/30 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">Get involved</p>
 
